@@ -5,7 +5,7 @@ An intelligent location discovery application built with Blazor, Azure OpenAI, a
 ## Features
 
 - **AI-Powered Search**: Uses Azure OpenAI to generate location data based on natural language queries
-- **Interactive Maps**: Built with Blazor Maps with real-time marker visualization
+- **Interactive Maps**: Built with [Blazor Maps](https://www.syncfusion.com/blazor-components/blazor-maps) with real-time marker visualization
 - **Smart Markers**: Customizable markers with context-aware tooltips and location details
 - **Rich Tooltips**: Display detailed information about locations with formatted text and images
 - **Multi-City Coverage**: Automatically discovers relevant places across 15 major cities
@@ -13,12 +13,9 @@ An intelligent location discovery application built with Blazor, Azure OpenAI, a
 
 ## Prerequisites
 
-- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
-- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/)
-- **Azure Account** with:
-  - Azure OpenAI Service deployed and configured
-  - API endpoint and key for the deployment
-  - GPT model (e.g., `gpt-35-turbo` or `gpt-4`) deployed
+* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) or later
 
 ## Quick Start
 
@@ -46,15 +43,6 @@ dotnet restore
 dotnet run
 ```
 
-### Customization
-
-You can customize several aspects of the application:
-
-- **Default Search Query**: Modify `SearchQuery` in `Pages/Index.razor.cs`
-- **Number of Results**: Change `max_tokens` in `Service/AISampleService.cs` to control response length
-- **Marker Icons**: Replace `map_pin.png` in `wwwroot/` with your custom marker images
-- **Tooltip Styling**: Edit the tooltip templates in `Pages/Index.razor` under `<TooltipTemplate>`
-
 ### Key Components
 
 - `AISampleService` - Communicates with Azure OpenAI to generate location data 
@@ -69,10 +57,9 @@ You can customize several aspects of the application:
 - **OpenStreetMap**: Free tile layer for map rendering
 - **.NET 8.0**: Modern runtime and framework
 
-## Resources
+## References
 
-- [Blazor Maps Documentation](https://www.syncfusion.com/blazor-components/blazor-maps)
-- [Azure OpenAI Service Documentation](https://learn.microsoft.com/azure/ai-services/openai/)
-- [Blazor Documentation](https://learn.microsoft.com/aspnet/core/blazor/)
-- [OpenStreetMap](https://www.openstreetmap.org/)
+- [Blazor Maps Documentation](https://blazor.syncfusion.com/documentation/maps/getting-started-webapp)
+- [Populate Data in Blazor Maps](https://blazor.syncfusion.com/documentation/maps/populate-data)
+- [Azure OpenAI Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
 
