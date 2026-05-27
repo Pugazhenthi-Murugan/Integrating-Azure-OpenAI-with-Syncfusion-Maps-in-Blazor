@@ -1,11 +1,15 @@
 # Integrating Azure OpenAI with Blazor Maps
 
-An intelligent location discovery application built with Blazor, Azure OpenAI, and Maps. Search for any location type and discover relevant places across major cities with AI-generated insights and beautiful interactive map visualizations.
+An intelligent location discovery application built with Blazor, Azure OpenAI, and [Maps](https://www.syncfusion.com/blazor-components/blazor-maps) component. Search for any location type and discover relevant places across major cities with AI-generated insights and beautiful interactive map visualizations.
+
+## Overview
+
+This application combines AI intelligence with interactive mapping to provide smart location discovery. Results are instantly visualized on an interactive map with custom markers, detailed tooltips, and location information. The real-time search enables users to explore locations dynamically while enjoying a seamless, visually engaging experience.
 
 ## Features
 
 - **AI-Powered Search**: Uses Azure OpenAI to generate location data based on natural language queries
-- **Interactive Maps**: Built with [Blazor Maps](https://www.syncfusion.com/blazor-components/blazor-maps) with real-time marker visualization
+- **Interactive Maps**: Built with Blazor Maps with real-time marker visualization
 - **Smart Markers**: Customizable markers with context-aware tooltips and location details
 - **Rich Tooltips**: Display detailed information about locations with formatted text and images
 - **Multi-City Coverage**: Automatically discovers relevant places across 15 major cities
@@ -43,23 +47,10 @@ dotnet restore
 dotnet run
 ```
 
-### Key Components
-
-- `AISampleService` - Communicates with Azure OpenAI to generate location data 
-- `Index.razor` - Displays the interactive map and search interface 
-- `Index.razor.cs` - Manages search state, marker collection, and data transformation 
-
-## Technologies Used
-
-- **Blazor**: Server-side web framework for interactive UI
-- **Azure OpenAI**: AI service for intelligent location generation
-- **Syncfusion Blazor**: Professional UI components (Maps, TextBox, Spinner)
-- **OpenStreetMap**: Free tile layer for map rendering
-- **.NET 8.0**: Modern runtime and framework
-
 ## References
 
 - [Blazor Maps Documentation](https://blazor.syncfusion.com/documentation/maps/getting-started-webapp)
 - [Populate Data in Blazor Maps](https://blazor.syncfusion.com/documentation/maps/populate-data)
+- [Blazor Maps Demo](https://blazor.syncfusion.com/demos/maps/default-functionalities?theme=fluent2)
 - [Azure OpenAI Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
 
